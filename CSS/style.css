@@ -1,56 +1,87 @@
 @charset "UTF-8";
 /* 共通部分
 ----------------------*/
-html{font-size: 100%;
-}
-body{font-family: "Noto Sans JP", "MyYuGothicM", "YuGothic", "-apple-system", "system-ui", "Hiragino kaku Gothic ProN", "Meiryo", "Verdana", "arial", "helvetica", "sans-serif";
-font-weight: 400;
+html {
+  font-size: 100%;
 }
 
-img{max-width: 100%;
+body {
+  font-family: "Noto Sans JP", "MyYuGothicM", "YuGothic", "-apple-system", "system-ui", "Hiragino kaku Gothic ProN", "Meiryo", "Verdana", "arial", "helvetica", "sans-serif";
+  font-weight: 500;
 }
+
+img {
+  max-width: 100%;
+}
+
 /* header
 ----------------------*/
-.header {display: flex;
-justify-content: space-between;
-padding-top: 15px; 
-font-weight: 900;
-font-size: 16px;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 12px;
+  font-weight: 900;
+  font-size: 16px;
 }
 
-.header-catch{
+.header .header-catch {
   margin: 0 21px;
 }
-.header .header-catch p a span{
-  display:inline-block;
+
+.header .header-catch p a span {
+  display: inline-block;
   vertical-align: top;
   margin: 0 0 8px 16px;
-
 }
+
 /*headerナビ部分*/
-.main-nav
-{display: flex;
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 900;
 }
-.main-nav li{
-  margin:3px 12px;
-  list-style: none; 
+
+.main-nav > li {
+  position: relative;
+  white-space: nowrap;
+  list-style: none;
 }
-.main-nav li ul li{
+
+.main-nav > li:hover {
   display: block;
-
 }
-/*headerロールオーバー部分*/
- 
-.main-nav ul li {
+
+.main-nav > li:hover ul {
+  display: block;
+}
+
+.main-nav > li:hover ul li {
+  list-style: none;
+}
+
+.main-nav > li:hover ul li a {
+  position: relative;
+  padding: 12px 60px 15px 15px;
+  height: auto;
+}
+
+.main-nav > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
   display: none;
-  }
-  .main-nav li ul:hover li a{
-    background-color: #efefef;
-    color: #444;
-    }
-a:link, a:visited, a:hover, a:active {
-  color: #121212;
-  text-decoration: none;
-}  
-
-
+}
+/*# sourceMappingURL=style.css.map */
