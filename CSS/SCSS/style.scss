@@ -44,6 +44,8 @@ span {
     list-style: none;
     width:146px;
     height: 70px;
+&:nth-child(4){
+        width: 100px;}
 &:hover {
     display: block;
     background-color: #d4faff;
@@ -58,12 +60,14 @@ li{
     a{  
     position: relative;
     height: auto;
-    text-decoration: none;    
+    text-decoration: none;
+    font-weight: 400;    
     color: #131D34;
         }
        }
       }
      }
+
 &:nth-child(5) {
     background-color: #2498B2;
 }
@@ -84,14 +88,23 @@ ul{ display: none;}
     background-size: cover;
     background-attachment: fixed;
     height: 650px;
+    z-index:  20;
+    position: relative;
 
-.tophead-layer {
+>.tophead-layer , .tophead-layer1 , .tophead-layer2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.tophead-layer1{
     padding-top: 80px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     background: url("/images/bg-hero1.png") no-repeat center center;
+    z-index: 100;
+
 .tophead-body {
     width:416px ;
     height: 323px;
@@ -99,6 +112,7 @@ ul{ display: none;}
     border-radius: 10px;
     padding: 43px 40px 19px;
     text-align: center;
+    
 img {
     width: 280px;
     height: auto;}
@@ -108,8 +122,29 @@ p {
 
 }
 .btn{
+    width:292px;
+    height:68px;
+    background-color: #A2D729;
+    padding: 20px 0;
+    margin: 30px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    font-weight: 900;
+    &:hover {
+        background-color: #99c434;}
     
+
+    a {color: #131D34;
+       text-decoration: none;
+    
+
 }
 }
 }
+.tophead-layer2{
+    background: url("/images/nab-raiyer2.png") no-repeat center;
+    z-index: 50;
+}
+}
+
 }

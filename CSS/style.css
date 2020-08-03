@@ -61,6 +61,10 @@ img {
   height: 70px;
 }
 
+.main-nav > li:nth-child(4) {
+  width: 100px;
+}
+
 .main-nav > li:hover {
   display: block;
   background-color: #d4faff;
@@ -82,6 +86,7 @@ img {
   position: relative;
   height: auto;
   text-decoration: none;
+  font-weight: 400;
   color: #131D34;
 }
 
@@ -113,9 +118,17 @@ img {
   background-size: cover;
   background-attachment: fixed;
   height: 650px;
+  z-index: 20;
+  position: relative;
 }
 
-.tophead .tophead-layer {
+.tophead > .tophead-layer, .tophead .tophead-layer1, .tophead .tophead-layer2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tophead .tophead-layer1 {
   padding-top: 80px;
   width: 100%;
   height: 100%;
@@ -126,9 +139,10 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   background: url("/images/bg-hero1.png") no-repeat center center;
+  z-index: 100;
 }
 
-.tophead .tophead-layer .tophead-body {
+.tophead .tophead-layer1 .tophead-body {
   width: 416px;
   height: 323px;
   background-color: #fff;
@@ -137,13 +151,40 @@ img {
   text-align: center;
 }
 
-.tophead .tophead-layer .tophead-body img {
+.tophead .tophead-layer1 .tophead-body img {
   width: 280px;
   height: auto;
 }
 
-.tophead .tophead-layer .tophead-body p {
+.tophead .tophead-layer1 .tophead-body p {
   font-weight: 700;
   margin: 12px 0;
+}
+
+.tophead .tophead-layer1 .tophead-body .btn {
+  width: 292px;
+  height: 68px;
+  background-color: #A2D729;
+  padding: 20px 0;
+  margin: 30px 20px;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 900;
+}
+
+.tophead .tophead-layer1 .tophead-body .btn:hover {
+  background-color: #99c434;
+}
+
+.tophead .tophead-layer1 .tophead-body .btn a {
+  color: #131D34;
+  text-decoration: none;
+}
+
+.tophead .tophead-layer1 .tophead-layer2 {
+  background: url("/images/nab-raiyer2.png") no-repeat center;
+  z-index: 50;
 }
 /*# sourceMappingURL=style.css.map */
