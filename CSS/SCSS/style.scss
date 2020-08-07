@@ -1,169 +1,235 @@
 @charset "UTF-8";
+
 /* 共通部分
 ----------------------*/
-html{font-size: 100%;
-}
-body{font-family: "Noto Sans JP", "MyYuGothicM", "YuGothic", "-apple-system", "system-ui", "Hiragino kaku Gothic ProN", "Meiryo", "Verdana", "arial", "helvetica", "sans-serif";
-font-weight: 500;
+
+html {
+  font-size: 100%;
 }
 
-img{max-width: 100%;
+body {
+  font-family: 'Noto Sans JP', 'MyYuGothicM', 'YuGothic', '-apple-system', 'system-ui', 'Hiragino kaku Gothic ProN', 'Meiryo', 'Verdana', 'arial', 'helvetica', 'sans-serif', 'FontAwesome';
+  font-weight: 900;
+  
 }
+
+img {
+  max-width: 100%;
+}
+
+
 
 /* header
 ----------------------*/
+
 .header {
-    display: flex;
-    justify-content: space-between; 
-    font-weight: 900;
-    font-size: 16px;
-    height: 70px;
-
-.header-catch {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 16px;
+  height: 70px;
+  .header-catch {
     margin: 0 21px;
-    padding-top: 10px;
-p {
-a {text-decoration: none;
-span {
-    display:inline-block;
-    vertical-align: top;
-    margin: 0 0 0 16px;
-    color: #131D34;    
-          }     
-    }
-}
-}
-}
-/*headerナビ部分*/
-.main-nav{
-    display: flex;
-    font-weight: 900;
-    height: 70px;
->li{ 
-    position: relative;
-    white-space: nowrap; 
-    list-style: none;
-    width:146px;
-    height: 70px;
-&:nth-child(4){
-        width: 100px;}
-&:hover {
-    display: block;
-    background-color: #d4faff;
-ul{ 
-    display: block;                        
-li{ 
-    list-style: none;
-    background-color: #e9f8fb;
-    width: 260px;
-    height: 60px;
-    padding: 20px 10px 15px 15px;
-    a{  
-    position: relative;
-    height: auto;
-    text-decoration: none;
-    font-weight: 400;    
-    color: #131D34;
+    padding-top: 13px;
+      a {
+        text-decoration: none;
+        span {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0px 0 0 16px;
+          color: #131D34;
+          font-weight: 900;
+          font-size: 13px;
+          strong{
+            font-size: 1.2rem;
+          }
         }
-       }
       }
-     }
-
-&:nth-child(5) {
-    background-color: #2498B2;
-}
->a{
-    display: flex;
-    height: 70px;
-    align-items: center;
-    text-decoration: none;
-    justify-content: space-around;
-    color: #131D34;
     }
-}
-ul{ display: none;}
-}
-/*article部分*/
-.tophead {
-    background: url("/images/nav-rayer1.png") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 650px;
-    z-index:  20;
-    position: relative;
+  }
 
->.tophead-layer , .tophead-layer1 , .tophead-layer2{
-    position: absolute;
+
+/*headerナビ部分*/
+
+.main-nav {
+  display: flex;
+  font-weight: 900;
+  height: 70px;
+  
+  >li {
+    position: relative;
+    white-space: nowrap;
+    list-style: none;
+    width: 146px;
+    height: 70px;
+    &:nth-child(3) {
+      width: 110px;
+    }
+    &:nth-child(4) {
+      width: 100px;
+    }
+    &:hover {
+      display: block;
+      background-color: #d4faff;
+      
+      ul {
+        display: block;
+        position: relative;
+        z-index: 300;
+        li {
+          list-style: none;
+          background-color: #e9f8fb;
+          width: 260px;
+          height: 60px;
+          padding: 20px 10px 15px 15px;
+          &:hover{
+            background-color: white;
+        }
+          a {
+            position: relative;
+            height: auto;
+            text-decoration: none;
+            font-weight: 400;
+            color: #131D34;
+            &:hover{
+                color: #2498B2;
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(5) {
+      background-color: #2498B2;
+    }
+     >a {
+      display: flex;
+      height: 70px;
+      align-items: center;
+      text-decoration: none;
+      justify-content: space-around;
+      color: #131D34;
+      
+     }  
+  }
+  ul {
+    display: none;
+  }
+}
+
+
+/*article部分*/
+
+.tophead {
+  background: url("/images/nav-rayer1.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+  position: relative;
+  z-index: 100;
+  .tophead-layer {
+    position: relative;
     width: 100%;
     height: 100%;
-}
-.tophead-layer1{
+  }
+  >.tophead-layer2 {
+    background: url(/images/nab-raiyer2.png) no-repeat center center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  }
+  >.tophead-layer1 {
     padding-top: 80px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     background: url("/images/bg-hero1.png") no-repeat center center;
-    z-index: 100;
+    position: absolute;
+    z-index: 200;
 
-.tophead-body {
-    width:416px ;
-    height: 323px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 43px 40px 19px;
-    text-align: center;
+    /*中央ロゴ及びボタン部分*/
     
-img {
-    width: 280px;
-    height: auto;}
-p { 
-    font-weight: 700;
-    margin: 12px 0;
-
-}
-.btn{
-    width:292px;
-    height:68px;
-    background-color: #A2D729;
-    padding: 20px 0;
-    margin: 30px 20px;
-    border-radius: 10px;
-    justify-content: center;
-    font-weight: 900;
-    &:hover {
-        background-color: #99c434;}
+    .tophead-body {
+      width: 413px;
+      height: 323px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 43px 40px 19px;
+      text-align: center;
+      img {
+        width: 280px;
+        height: auto;
+      }
+      p {
+        width: 380px;
+        font-weight: bold;
+        margin: 15px 0px 0px -24px;
+      }
+      .btn {
+        width: 292px;
+        height: 68px;
+        background-color: #A2D729;
+        padding: 20px 0;
+        margin: 30px 20px;
+        border-radius: 10px;
+        justify-content: center;
+        
+        &:hover {
+          background-color: #99c434;
+        }
+        a {
+          color: #131D34;
+          text-decoration: none;
+          font-size: 1.1rem;
+        }
+      }
+    }
     
-
-    a {color: #131D34;
-       text-decoration: none;
+    /*画像レイヤー2枚目*/
     
-
+  }
 }
-}
-.tophead-layer2{
-    background: url("/images/nab-raiyer2.png") no-repeat center;
-    z-index: 50;}
-}
-
-}
-
-}
-.wrapper{
-    width: 100%;
-    height: 230px;
-    background-color: #000;
-.recommendation{
+/*フッター部分*/
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  .recommendation {
     position: relative;
     display: flex;
-    margin-top: -263px;
+    margin-top: -200px;
     justify-content: center;
-    background-color: #fff;
-    z-index: 150;
-.recommendation-entry {
-    width: 229px;
-    margin: 0 50px;
-}
-    
-}
+    color: #fff;
+    z-index: 1000;
+    margin-bottom: 100px;
+   .recommendation-entry {
+     margin: 0 50px;
+     width: 229px;
+     .recommendation-title{  
+      text-align: center;
+      
+      .recommendation-icon{
+        width: 229px;
+        height: 229px;
+        position: relative;
+        display: flex;
+        border: #000 solid 6px;
+        border-radius: 50%;
+        justify-content: center;
+        background-color: #fff;
+        
+      } 
+        p{
+        margin: 10px 0px;
+        font-size:1.5rem;
+        font-weight: 700;    
+      }
+      }
+      .recommendation-body{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+   }
+  }
 }
