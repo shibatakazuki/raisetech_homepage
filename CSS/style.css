@@ -71,6 +71,7 @@ img {
 .main_nav > .nav_roll .nav_roll2 {
   position: relative;
   z-index: 300;
+  display: none;
 }
 
 .main_nav > .nav_roll .nav_roll2 li {
@@ -79,12 +80,6 @@ img {
   width: 260px;
   height: 60px;
   padding: 20px 10px 15px 15px;
-}
-
-.main_nav > .nav_roll .nav_roll2 li:hover {
-  background-color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .main_nav > .nav_roll .nav_roll2 li a {
@@ -113,7 +108,29 @@ img {
   background-color: #2498B2;
 }
 
-.main_nav > .nav_roll > a {
+.main_nav > .nav_roll:nth-child(5):hover {
+  background-color: #2498B2;
+}
+
+.main_nav > .nav_roll > .nav_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #131D34;
+}
+
+.main_nav > .nav_roll > .nav_link:hover {
+  background-color: #d4f1f8;
+}
+
+.main_nav > .nav_roll > .nav_link2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

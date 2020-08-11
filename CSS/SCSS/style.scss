@@ -53,7 +53,7 @@ img {
   display: flex;
   font-weight: 900;
   height: 70px;
-  
+
   >.nav_roll {
     position: relative;
     white-space: nowrap;
@@ -61,20 +61,17 @@ img {
     width: 146px;
     height: 70px;
     background-color: #fff;
-      
-      .nav_roll2 {
+       .nav_roll2 {
         position: relative;
         z-index: 300;
-        li {
+        display: none;
+          li {
           list-style: none;
           background-color: #e9f8fb;
           width: 260px;
           height: 60px;
           padding: 20px 10px 15px 15px;
-          &:hover{
-            background-color: white;
-            transition: 0.5s;
-        }
+          
           a {
             position: relative;
             height: auto;
@@ -96,8 +93,11 @@ img {
     }
     &:nth-child(5) {
       background-color: #2498B2;
+      &:hover{
+        background-color: #2498B2;
     }
-     >a {
+    }
+     >.nav_link {
       display: flex;
       height: 70px;
       align-items: center;
@@ -105,10 +105,21 @@ img {
       justify-content: space-around;
       color: #131D34;
       
-     }  
+      &:hover {
+        background-color: #d4f1f8;
+
+      }
+     }
+     >.nav_link2 {
+      display: flex;
+      height: 70px;
+      align-items: center;
+      text-decoration: none;
+      justify-content: space-around;
+      color: #131D34;  
   }
 }
-
+}
 
 /*article部分*/
 
@@ -170,6 +181,8 @@ img {
         
         &:hover {
           background-color: #99c434;
+       
+
         }
         a {
           color: #131D34;
