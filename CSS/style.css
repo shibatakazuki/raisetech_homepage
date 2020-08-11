@@ -51,7 +51,7 @@ img {
 }
 
 /*headerナビ部分*/
-.main-nav {
+.main_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,34 +59,21 @@ img {
   height: 70px;
 }
 
-.main-nav > li {
+.main_nav > .nav_roll {
   position: relative;
   white-space: nowrap;
   list-style: none;
   width: 146px;
   height: 70px;
+  background-color: #fff;
 }
 
-.main-nav > li:nth-child(3) {
-  width: 110px;
-}
-
-.main-nav > li:nth-child(4) {
-  width: 100px;
-}
-
-.main-nav > li:hover {
-  display: block;
-  background-color: #d4faff;
-}
-
-.main-nav > li:hover ul {
-  display: block;
+.main_nav > .nav_roll .nav_roll2 {
   position: relative;
   z-index: 300;
 }
 
-.main-nav > li:hover ul li {
+.main_nav > .nav_roll .nav_roll2 li {
   list-style: none;
   background-color: #e9f8fb;
   width: 260px;
@@ -94,11 +81,13 @@ img {
   padding: 20px 10px 15px 15px;
 }
 
-.main-nav > li:hover ul li:hover {
+.main_nav > .nav_roll .nav_roll2 li:hover {
   background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.main-nav > li:hover ul li a {
+.main_nav > .nav_roll .nav_roll2 li a {
   position: relative;
   height: auto;
   text-decoration: none;
@@ -106,15 +95,25 @@ img {
   color: #131D34;
 }
 
-.main-nav > li:hover ul li a:hover {
+.main_nav > .nav_roll .nav_roll2 li a:hover {
   color: #2498B2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.main-nav > li:nth-child(5) {
+.main_nav > .nav_roll:nth-child(3) {
+  width: 110px;
+}
+
+.main_nav > .nav_roll:nth-child(4) {
+  width: 100px;
+}
+
+.main_nav > .nav_roll:nth-child(5) {
   background-color: #2498B2;
 }
 
-.main-nav > li > a {
+.main_nav > .nav_roll > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,10 +125,6 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #131D34;
-}
-
-.main-nav ul {
-  display: none;
 }
 
 /*article部分*/
