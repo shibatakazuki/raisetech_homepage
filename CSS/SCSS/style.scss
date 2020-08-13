@@ -65,12 +65,18 @@ img {
         position: relative;
         z-index: 300;
         display: none;
+        
           li {
           list-style: none;
           background-color: #e9f8fb;
           width: 260px;
           height: 60px;
           padding: 20px 10px 15px 15px;
+          &:hover{
+            background-color: #fff;
+            transition: 0.5s;
+            
+          }
           
           a {
             position: relative;
@@ -105,10 +111,7 @@ img {
       justify-content: space-around;
       color: #131D34;
       
-      &:hover {
-        background-color: #d4f1f8;
-
-      }
+      
      }
      >.nav_link2 {
       display: flex;

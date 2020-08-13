@@ -82,6 +82,12 @@ img {
   padding: 20px 10px 15px 15px;
 }
 
+.main_nav > .nav_roll .nav_roll2 li:hover {
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .main_nav > .nav_roll .nav_roll2 li a {
   position: relative;
   height: auto;
@@ -124,10 +130,6 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #131D34;
-}
-
-.main_nav > .nav_roll > .nav_link:hover {
-  background-color: #d4f1f8;
 }
 
 .main_nav > .nav_roll > .nav_link2 {
